@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="movie.css">
+</head>
+<body id="app">
+
+  <div class="header row">
+  <div class="col-5">
+  <h1 class="In-Theaters">In Theaters</h1>
+  <h3 class="Top-Movies-This-Week">Top Movies This Week</h3>
+  </div>
+  <div class="col-7">
+  <div class="View-More">
+    <a href="{{movieItem.links.alternate}}" target="_blank">View More</a>
+  </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="Rectangle-285">
+        <div class="row">
+          <div class="col-9 movie-content">
+            <div class="One-line-movie-title">
+              {{movieItem.title}}
+            </div>
+            <div class="Mauris-vel-nunc-eros">
+              {{movieItem.synopsis}}
+            </div>
+            <span v-for="x in movieItem.ratings.audience_score/20">
+              <img src="img/star.svg" class="Star">
+            </span>
+          </div> <!-- End col-9 -->
+          <div class="col-3 Picture">
+            <img v-bind:src=movieItem.posters.original class="Movie-Poster">
+          </div> <!-- End col-3 -->
+        </div> <!-- End row -->
+      </div> <!-- End Rectangle-285 -->
+    </div> <!-- End col-12 -->
+  </div> <!-- End row -->
+
+  <div class="row" style="overflow:hidden">
+    <div class="col-12 center" style="overflow:hidden;" align="center">
+      <span v-for="index in 5">
+        <div v-if="index==cur_index" class="Oval-selected" v-on:click="fetchMovie(index)"></div>
+        <div v-else class="Oval-disselected" v-on:click="fetchMovie(index)"></div>
+      </span>
+    </div>
+  </div>
+
+  <div class="footer">
+  </div>
+
+  <script type="text/javascript" src="movie.js"></script>
+
+</body>
+</html>
+
+

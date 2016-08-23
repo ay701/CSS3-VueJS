@@ -1,0 +1,12 @@
+Answer 1:
+Short answer: Import library.
+Before doing so, I would like to do some research on the library.
+For example, how the library works to convert my float to fixed point notation?
+Is there a algorithm I can compe up with better than using a list of functionality.
+
+Answer 2:
+Short answer: Review the code I already wrote.
+
+Answer 3:
+MongoDB.
+Since the request is to build a small-scale API, I would like to take it as a good opportunity showing difference between MongoDB and MySQL to team.
