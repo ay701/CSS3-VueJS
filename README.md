@@ -1,7 +1,7 @@
 # CSS3-VueJS
-This is an example of Single Page Application
- 
-It uses Vue JS framework, ajax/http to read data from rottentomato website  
+This is an example of Single Page Application using Vue JS framework, CSS3
+
+The app uses ajax/http to read data from rottentomato website  
 User can click to see different popular movie content
 
 This example shows how to use CSS3 Media Queries 
