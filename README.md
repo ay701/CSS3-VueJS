@@ -5,6 +5,7 @@ The app uses ajax/http to read data from rottentomato website
 Users can click the round buttons to see different popular movie content
 
 The example shows how to use CSS3 Media Queries
+
 It makes sure web is responsive to all different devices
 
 Vue JS is a Javascript Framework, similar to AngularJS 
